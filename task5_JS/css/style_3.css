@@ -1,0 +1,46 @@
+body {
+    background: #fff6d6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+form {
+    width: 650px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+div {
+    padding: 10px 0;
+    text-align: center;
+}
+
+label {
+    margin-right: 20px;
+}
+
+textarea,
+input[type='submit'] {
+    box-sizing: border-box;
+    margin: 10px;
+    width: 630px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.result {
+    width: 620px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid black;
+}

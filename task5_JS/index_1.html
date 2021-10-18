@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_1.css">
+    <title>Практическое задание - Задание 3</title>
+</head>
+
+<body>
+    <form action="" method="get" name="myForm" autocomplete="off">
+        <div>
+            <label for="firstname">Firstname:</label>
+            <input type="text" name="firstname" id="firstname">
+        </div>
+
+        <div>
+            <label for="lastname">Lastname:</label>
+            <input type="text" name="lastname" id="lastname">
+        </div>
+
+        <div>
+            <label for="birthday">Birthday:</label>
+            <input type="date" name="birthday" id="birthday" min="1930-01-01" max="2021-05-31">
+        </div>
+
+        <div id="gender">
+            <label>Gender:</label>
+            <input type="radio" name="gender" id="male" value="male" checked>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="Russia">Россия</option>
+                <option value="Ukraine">Украина</option>
+                <option value="Poland">Польша</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="city">City:</label>
+            <select id="city" name="city">
+            </select>
+        </div>
+
+        <div id="skills">
+            <label>Skills:</label>
+
+            <input type="checkbox" name="html" id="html">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" name="css" id="css">
+            <label for="css">CSS</label>
+
+            <input type="checkbox" name="js" id="js">
+            <label for="js">JS</label>
+
+            <input type="checkbox" name="php" id="php">
+            <label for="php">PHP</label>
+
+            <input type="checkbox" name="c++" id="c++">
+            <label for="c++">C++</label>
+
+            <input type="checkbox" name="java" id="java">
+            <label for="java">JAVA</label>
+            
+            <input type="checkbox" name="c#" id="c#">
+            <label for="c#">C#</label>
+        </div>
+
+        <input type="submit" id="submit" value="Save">
+    </form>
+
+    <script src="js/script_1.js"></script>
+</body>
+
+</html>

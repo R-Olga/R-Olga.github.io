@@ -1,0 +1,75 @@
+body {
+    font-size: 18px;
+    background: #ffefc3;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 20px 10px;
+    width: 80vw;
+    min-width: 650px;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#skills, #button, input[type="submit"] {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], 
+input[type="date"],
+select {
+    width: 35vw;
+    min-width: 250px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 5px;
+    font-weight: 600;
+}
+
+#skills label, 
+#gender label {
+    display: inline;
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+#skills label:first-child, 
+#gender label:first-child {
+    margin-right: 0px;
+    font-weight: bold;
+}
+
+#gender {
+    margin-top: 20px;
+}
+
+.result {
+    margin-top: 50px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+td:first-child {
+    font-weight: bold;
+}

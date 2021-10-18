@@ -1,0 +1,81 @@
+body {
+    background: rgb(238, 252, 255);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+.label-container {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.label-container label {
+    margin-right: auto;
+    font-weight: bold;
+}
+
+.label-container .massage {
+    color: rgb(209, 0, 0);
+    text-align: right;
+    align-self: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    height: 20px;
+    margin-top: 25px;
+}
+
+input, select {
+    box-sizing: content-box;
+    width: 350px;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    margin: 50px 0;
+}
+
+#buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#buttons > button {
+    margin: 20px 5px;
+}
+
+#list-colors {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.new-color {
+    width: 200px;
+    margin: 20px;
+    padding: 30px;    
+}
+
+.new-color > div {
+    padding: 5px;
+    background: rgba(255, 255, 255, .5);
+}
+
+.new-color p {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px auto;
+}

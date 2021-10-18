@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style1.css">
+    <title>Задание 1</title>
+</head>
+
+<body>
+    <form action="" method="GET">
+        <div class="line">
+            <h2>CREDIT CARD DETAILS</h2>
+        </div>
+        <div class="container">
+            <label for="card_number">Card number</label>
+            <input type="text" name="card_number" id="card_number" minlength="19" maxlength="19"
+                pattern="[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}" placeholder="1234 5678 9012 3456" required>
+            <label for="card_holder">Name On Card</label>
+            <input type="text" name="card_holder" id="card_holder" placeholder="Name Surname"
+                pattern="[a-z]{1,15}\s[a-z]{1,15}" required>
+            <div class="block">
+                <div class="date">
+                    <label for="expiry_date">Expiry Date</label>
+                    <input type="text" name="expiry_date" id="expiry_day" minlength="2" maxlength="2" placeholder="02"
+                        pattern="[0-9]" size="5" required>
+                    <input type="text" name="expiry_year" id="expiry_year" minlength="4" maxlength="4" pattern="[0-9]"
+                        placeholder="2017" size="5" required>
+                </div>
+                <div class="cvv_cvn">
+                    <label for="cvv_cvn">CVV/CVN</label>
+                    <input type="password" name="cvv_cvn" id="cvv_cvn" minlength="3" maxlength="3" pattern="[0-9]"
+                        placeholder="***" size="5" required>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

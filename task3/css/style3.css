@@ -1,0 +1,183 @@
+body {
+    min-width: 450px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    padding: 20px 40px;
+    border-bottom: 2px solid #c5c5c5;
+}
+
+header > * {
+    display: inline-block;
+}
+
+#logo, #user {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#logo {
+    padding: 20px 0 20px 65px;
+    background-image: url(../icons_hw/mail.png);
+}
+
+#user {
+    float: right;
+    padding: 20px 65px 20px 0;
+    background-image: url(../icons_hw/account.png);
+    background-position: right;
+}
+
+
+aside, section {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+}
+
+aside {
+    width: 20%;
+}
+
+ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    margin-right: 20px;
+    padding: 10px 50px;
+    background-size: 30px, auto, contain;
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+}
+
+a:hover {
+    background-color: antiquewhite;
+}
+
+#incoming {
+    background-image: url(../icons_hw/incom.png);
+}
+
+#outgoing {
+    background-image: url(../icons_hw/outcom.png);
+}
+
+#drafts {
+    background-image: url(../icons_hw/draft.png);
+}
+
+#spam {
+    background-image: url(../icons_hw/spam.png);
+}
+
+section {
+    width: 80%;
+    margin-left: -0.25em;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.letter-line {
+    display: table-row;
+}
+
+.letter-user, .letter-text, .letter-date {
+    display: table-cell;
+    border-bottom: 1px solid #c5c5c5;
+    padding: 0 20px;
+}
+
+.letter-user {
+    padding: 0 50px;
+    background-image: url(../icons_hw/star1.svg);
+    background-size: 20px, auto, contain;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+}
+
+.red-star {
+    background-image: url(../icons_hw/star2.svg);
+}
+
+span {
+    color: #afafaf;
+}
+
+.letter-date {
+    padding-left: 40px;
+}
+
+.attach {
+    background-image: url(../icons_hw/attach_26.png);
+    background-size: 20px, auto, contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+
+@media screen and (max-width: 800px) {
+    aside {
+        width: 25%;
+    }
+    
+    section {
+        width: 70%;
+    }
+
+    .letter-line {
+        display: block;
+        margin: 20px 0;
+        border-bottom: 1px solid #c5c5c5;
+    }
+
+    .letter-user, .letter-text, .letter-date {
+        display: block;
+        border: none;
+    }
+
+    .letter-user, .letter-text {
+        width: 70%;
+    }
+
+    .letter-user {
+        background-position: 0;
+    }
+
+    .letter-text {
+        padding-left: 50px;
+    }
+
+    .letter-date {
+        float: right;
+        margin-top: -85px
+    }
+
+    span {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    aside {
+        width: 15%;
+        overflow: hidden;
+        margin-right: 20px;
+    }
+
+    a {
+        font-size: 0;
+        margin-bottom: 10px;
+        padding: 25px;
+        background-size: 50px, auto;
+        background-position: center;
+    }
+}

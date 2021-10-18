@@ -1,0 +1,46 @@
+body {
+    background: #fff9da;
+}
+
+p {
+    font-weight: bold;
+    text-align: center;
+}
+
+form > div {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    margin: 20px;
+}
+
+label {
+    font-weight: bold;
+    vertical-align: top;
+}
+
+input[type='submit'] {
+    width: 96vw;
+    margin: 20px;
+}
+
+.container {
+    margin: 20px;
+    border: 1px solid grey;
+}
+
+.container div:first-of-type {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.container > * { 
+    padding: 5px 10px;
+}
+
+#date {
+    text-align: right;
+}
+
+#user-message {
+    border-top: 1px dotted grey;
+}

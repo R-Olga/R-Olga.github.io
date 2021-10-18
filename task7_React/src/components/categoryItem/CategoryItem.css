@@ -1,0 +1,33 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 20px 20px 40px;
+    padding: 10px;
+    box-shadow: 0 0 6px 2px silver;
+}
+
+.card img {
+    width: 300px;
+}
+
+.card p {
+    margin-bottom: 30px;
+}
+
+.card-active {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card-active a {
+    padding: 10px 20px 12px;
+    border-radius: 6px;
+    background: orangered;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}

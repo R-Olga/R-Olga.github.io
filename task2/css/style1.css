@@ -1,0 +1,61 @@
+form {
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: #466c6f;
+    background-color: #a2dcdc;
+    background-image: url(../images/moon_flag.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: right -90px bottom -15px;
+}
+
+.container {
+    width: 70%;
+}
+
+.line {
+    width: 75%;
+    margin-left: -35px;
+    padding-left: 30px;
+    background-color: #db6423;
+}
+
+h2 {
+    padding: 10px;
+    color: #fff;
+}
+
+input, label {
+    display: block;
+}
+
+label {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+input {
+    font-size: 20px;
+    border: none;
+    padding: 10px;
+    border-bottom: 1px solid #466c6f;
+    background-color: #c3e8e8;
+    color: #466c6f;
+}
+
+.container>input {
+    width: 85%;
+}
+
+.block {
+    display: flex;
+}
+
+.date input {
+    display: inline;
+    margin-right: 20px;
+}

@@ -1,0 +1,141 @@
+form {
+    width: 90%;
+    margin: 50px auto;
+    box-shadow: 0 0 10px #ccc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    background-color: #eeeeee;
+}
+
+.part_1 {
+    display: flex;
+    margin: 25px;
+    padding-top: 20px;
+}
+
+.regitration_form {
+    width: 50%;
+    margin-right: 25px;
+}
+
+.regitration_form input {
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+    background-color: #eee;
+}
+
+.username, .email, .password {
+    margin-top: 10px;
+    padding-left: 50px;
+    background-size: 40px;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.username {
+    background-image: url(../images/username.png);
+}
+
+.email {
+    background-image: url(../images/email.png);
+}
+
+.password {
+    background-image: url(../images/pswd.png);
+}
+
+.username input, .email input {
+    width: 100%;
+}
+
+.password input {
+    width: 48%;
+}
+
+.personal_detalis {
+    width: 50%;
+    margin-left: 25px;
+}
+
+.personal_detalis>div {
+    margin-top: 10px;
+}
+
+.personal_detalis select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url(../images/down.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center right;
+}
+
+.personal_detalis input, .personal_detalis select {
+    width: 48%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+    background-color: #eee;
+}
+
+.checked {
+    margin: 50px 25px;
+}
+
+.checked div {
+    margin-top: 10px;
+}
+
+hr {
+    width: 100%;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    margin-left: 75%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgb(37 171 152);
+}
+
+@media screen and (max-width: 900px) {
+    
+    .part_1 {
+        display: block;
+    }
+
+    .regitration_form, .personal_detalis {
+        width: 100%;
+    }
+
+    .personal_detalis {
+        margin-top: 40px;
+        margin-left: 0;
+    }
+
+    button {
+        margin-left: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .username input, .email input, .password input, .personal_detalis input, .personal_detalis select {
+        width: 100%
+    }
+    
+    .password {
+        background-position: left top;
+    }
+
+    button {
+        margin-left: 40%;
+    }
+}

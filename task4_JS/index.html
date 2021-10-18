@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ДЗ - 13</title>
+</head>
+
+<body>
+    <form action="" method="get" name="add-color">
+        <h2>Create new color</h2>
+
+        <div class="label-container">
+            <label for="color">Color:</label>
+            <span class="massage"></span>
+        </div>
+        <input type="text" name="color" id="color" required>
+
+        <div class="label-container">
+            <label for="type">Type:</label>
+            <span class="massage"></span>
+        </div>
+        <select name="type" id="type">
+            <option value="RGB">RGB</option>
+            <option value="RGBA">RGBA</option>
+            <option value="HEX">HEX</option>
+        </select>
+
+        <div class="label-container">
+            <label for="code">Code:</label>
+            <span class="massage"></span>
+        </div>
+        <input type="text" name="code" id="code" required>
+
+        <input type="submit" name="submit" value="Save">
+    </form>
+
+    <hr>
+
+    <div>
+        <h2>All colors</h2>
+        <div id="buttons">
+            <button id="get-colors">Get saved colors</button>
+            <button id="delete-colors">Delete saved colors</button>
+        </div>
+        <div id="list-colors"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

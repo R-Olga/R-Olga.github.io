@@ -1,0 +1,120 @@
+.main-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #eaeaea;
+}
+
+/* Решение с использованием Grid*/
+
+/* .container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: 
+    "user-1 message user-2"; 
+    margin: 20px auto;
+}
+
+.container:nth-child(odd) .user {
+    grid-area: user-1;
+    justify-self: end;
+    float: left;
+ }
+
+.container:nth-child(even) .user {
+    grid-area: user-2;
+    float: right;
+}
+
+.user > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.username p {
+    margin: 0;
+    
+}
+
+.username:nth-child(odd) p {
+    text-align: right;
+}
+
+.username:nth-child(even) p {
+    text-align: left;
+}
+
+.username p:nth-child(2) {
+    color: #919191;
+}
+
+.container > p {
+    grid-area: message;
+    width: 80%;
+    margin: 0;
+    padding: 20px;
+}
+
+.container:nth-child(odd) > p {
+    border-radius: 10px 10px 10px 0;
+    background-color: rgb(255, 78, 255);
+}
+
+.container:nth-child(even) > p {
+    justify-self: end;
+    border-radius: 10px 10px 0;
+    background-color: rgb(59, 59, 255);
+} */
+
+
+/* Решение с использованием Flexbox*/
+
+
+.container {
+    display: flex;
+    align-items: baseline;
+}
+
+.container:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.username:nth-child(even) p {
+    text-align: left;
+}
+
+.user > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.username p {
+    margin: 0;
+}
+
+.username:nth-child(odd) p {
+    text-align: right;
+}
+
+.username:nth-child(even) p {
+    text-align: left;
+}
+
+.username p:nth-child(2) {
+    color: #919191;
+}
+
+.container > p {
+    width: 50%;
+    padding: 20px;
+}
+
+.container:nth-child(odd) > p {
+    border-radius: 10px 10px 10px 0;
+    background-color: rgb(255, 78, 255);
+}
+
+.container:nth-child(even) > p {
+    border-radius: 10px 10px 0;
+    background-color: rgb(59, 59, 255);
+}

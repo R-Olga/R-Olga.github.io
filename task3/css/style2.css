@@ -1,0 +1,73 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #019e9e;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-left: 20px;
+    color: #fff;
+    background-color: #008b8b;
+}
+
+.container {
+    display: flex;
+    overflow: auto;
+    margin-top: 90px;
+}
+
+.board {
+    min-width: 400px;
+    height: 500px;
+    overflow: auto;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: #dcdcdc;
+}
+
+h2 {
+    margin-left: 20px;
+}
+
+.note {
+    width: 85%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding-left: 40px;
+    background-image: url(../icons_hw_module_8_9/justify_26.png);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.items div:last-child {
+    margin-left: auto;
+}
+
+.checkbox, .comments, .attach {
+    margin-left: 10px;
+    padding-left: 35px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.checkbox {
+    background-image: url(../icons_hw_module_8_9/checkbox_26.png);
+}
+
+.attach {
+    background-image: url(../icons_hw_module_8_9/attach_26.png);
+}
+
+.comments {
+    background-image: url(../icons_hw_module_8_9/comments_26.png);
+}
